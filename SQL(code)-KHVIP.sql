@@ -1,0 +1,11 @@
+USE Northwind
+GO
+DROP VIEW DSKHLaVIP
+GO
+CREATE VIEW DSKHLaVIP
+AS
+SELECT TOP(100)PERCENT *
+FROM Customers
+WHERE (ContactTitle=N'Manager')OR(ContactTitle=N'Owner')
+
+GO
